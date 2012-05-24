@@ -9,26 +9,35 @@
 	</parent>
 	
 	<description>Sends notifications about jobs to Buildcoin.com to power the team CI game, reports, and other awesomeness.</description>
-	<url>http://buildcoin.com</url>
+	<url>http://wiki.jenkins-ci.org/display/JENKINS/Buildcoin+Plugin</url>
 	<groupId>com.buildcoin.plugins.jenkins</groupId>
-	<artifactId>buildcoin-jenkins</artifactId>
+	<artifactId>buildcoin-plugin</artifactId>
 	<version>1.0</version>
 	<packaging>hpi</packaging>
-	
+    <scm>
+        <connection>scm:git:ssh://github.com/jenkinsci/buildcoin-plugin.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/jenkinsci/buildcoin-plugin.git</developerConnection>
+        <url>https://github.com/jenkinsci/buildcoin-plugin</url>
+    </scm>
+    <developers>
+        <developer>
+            <id>webandtech</id>
+            <name>Aaron Severs</name>
+            <email>asevers@gmail.com</email>
+        </developer>
+    </developers>
 	<repositories>
         <repository>
             <id>repo.jenkins-ci.org</id>
             <url>http://repo.jenkins-ci.org/public/</url>
         </repository>
     </repositories>
-
     <pluginRepositories>
         <pluginRepository>
             <id>repo.jenkins-ci.org</id>
             <url>http://repo.jenkins-ci.org/public/</url>
         </pluginRepository>
     </pluginRepositories>
-    
     <dependencies>
 		<dependency>
 			<groupId>com.google.code.gson</groupId>
@@ -36,5 +45,4 @@
 			<version>2.1</version>
 		</dependency>
 	</dependencies>
-	
 </project>
