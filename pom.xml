@@ -11,7 +11,7 @@
 	<url>https://wiki.jenkins-ci.org/display/JENKINS/Buildcoin+Plugin</url>
 	<groupId>com.buildcoin.plugins.jenkins</groupId>
 	<artifactId>buildcoin-plugin</artifactId>
-	<version>1.0</version>
+	<version>1.1-SNAPSHOT</version>
 	<packaging>hpi</packaging>
     <scm>
         <connection>scm:git:ssh://github.com/jenkinsci/buildcoin-plugin.git</connection>
