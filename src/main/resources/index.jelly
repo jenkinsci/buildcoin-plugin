@@ -1,3 +1,4 @@
 <div>
-	Sends job status to <a href="https://buildcoin.com" target="_blank">Buildcoin.com</a> for the team CI game, reports, and other awesomeness.
+	Sends build info to <a href="http://buildcoin.com" target="_blank">Buildcoin</a>,
+	a CI game that rewards users for committing often, keeping the build stable, and using pull requests for code reviews.
 </div>
