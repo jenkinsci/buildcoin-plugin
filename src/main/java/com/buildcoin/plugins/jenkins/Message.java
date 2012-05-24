@@ -86,6 +86,7 @@ public class Message {
 		scmChange.setScmAuthor(change.getAuthor().getDisplayName());
 		scmChange.setScmMessage(change.getMsg());
 		scmChange.setScmRevision(change.getCommitId());
+		scmChange.setScmTimestamp(change.getTimestamp());
 		scmChanges.add(scmChange);
 	    }
 	    buildState.setScmChanges(scmChanges);

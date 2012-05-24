@@ -8,6 +8,8 @@ public class ScmChange {
 	
 	private String scmRevision;
 	
+	private long scmTimestamp;
+	
 	public String getScmAuthor() {
 		return scmAuthor;
 	}
@@ -30,6 +32,14 @@ public class ScmChange {
 
 	public void setScmRevision(String scmRevision) {
 		this.scmRevision = scmRevision;
+	}
+
+	public long getScmTimestamp() {
+		return scmTimestamp;
+	}
+
+	public void setScmTimestamp(long scmTimestamp) {
+		this.scmTimestamp = scmTimestamp;
 	}
 	
 }
