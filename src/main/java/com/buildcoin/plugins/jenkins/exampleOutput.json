@@ -1,11 +1,11 @@
 {
    "job_name":"BUILD-buildcoin-development",
-   "job_url":"https://tools.19flr.com/jenkins/job/BUILD-buildcoin-development/",
+   "job_url":"https://tools/jenkins/job/BUILD-buildcoin-development/",
    "build":{
       "build_number":221,
       "phase":"COMPLETED",
       "status":"SUCCESS",
-      "build_url":"https://tools.19flr.com/jenkins/job/BUILD-buildcoin-development/221/",
+      "build_url":"https://tools/jenkins/job/BUILD-buildcoin-development/221/",
       "causes":[
          {
             "cause_type":"SCMTRIGGERED",
