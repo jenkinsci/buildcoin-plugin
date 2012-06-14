@@ -1,0 +1,30 @@
+{
+   "job_name":"BUILD-buildcoin-development",
+   "job_url":"https://tools.19flr.com/jenkins/job/BUILD-buildcoin-development/",
+   "build":{
+      "build_number":221,
+      "phase":"COMPLETED",
+      "status":"SUCCESS",
+      "build_url":"https://tools.19flr.com/jenkins/job/BUILD-buildcoin-development/221/",
+      "causes":[
+         {
+            "cause_type":"SCMTRIGGERED",
+            "short_description":"Started by an SCM change"
+         }
+      ],
+      "scm_changes":[
+         {
+            "scm_author":"asevers",
+            "scm_message":"fix for commit date when jenkins creates commits",
+            "scm_revision":"bc356d8f19662a3bafaef4f53158fc943fbcc057",
+            "scm_timestamp":1339621453000
+         },
+         {
+            "scm_author":"asevers",
+            "scm_message":"change to show that we are now native on github enterprise",
+            "scm_revision":"07ceb69b171df55d3f4d1173d0fb35425acac2c8",
+            "scm_timestamp":1339621554000
+         }
+      ]
+   }
+}
