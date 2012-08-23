@@ -20,16 +20,22 @@ public enum Phase {
 	String url;
 	String key = null;
 	
-	if (defaultProperty.isEnabled() && jobProperty == null) {
-	    key = defaultProperty.getBuildcoinKey();
-	} else if ((defaultProperty.isEnabled() && !jobProperty.isBuildcoinJobDisabled()) || jobProperty.isEnabled()) {
-	    
-	    if (jobProperty.getBuildcoinJobKey() != null && !jobProperty.getBuildcoinJobKey().isEmpty()) {
-		key = jobProperty.getBuildcoinJobKey();
-	    } else {
-		// use global config if job does not have a specific Buildcoin key specified
-		key = defaultProperty.getBuildcoinKey();
-	    }
+	try {
+		if (defaultProperty.isEnabled() && jobProperty == null) {
+		    key = defaultProperty.getBuildcoinKey();
+		} else if ((defaultProperty.isEnabled() && !jobProperty.isBuildcoinJobDisabled()) || jobProperty.isEnabled()) {
+		    
+		    if (jobProperty.getBuildcoinJobKey() != null && !jobProperty.getBuildcoinJobKey().isEmpty()) {
+			key = jobProperty.getBuildcoinJobKey();
+		    } else {
+			// use global config if job does not have a specific Buildcoin key specified
+			key = defaultProperty.getBuildcoinKey();
+		    }
+		}
+	} catch (NullPointerException e1) {
+		if (defaultProperty.isEnabled()) {
+			key = defaultProperty.getBuildcoinKey();
+		}
 	}
 	
 	if (key != null) {
